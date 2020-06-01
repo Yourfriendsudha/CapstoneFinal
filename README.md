@@ -18,9 +18,9 @@ database_setup = {
 
 4. if Sqlite is to be used, uncomment the below in models.py and comment the postgres database url
 
-# database_filename = "database.db"
-# project_dir = os.path.dirname(os.path.abspath(__file__))
-# database_path = "sqlite:///{}".format(os.path.join(project_dir, database_filename))
+database_filename = "database.db"
+project_dir = os.path.dirname(os.path.abspath(__file__))
+database_path = "sqlite:///{}".format(os.path.join(project_dir, database_filename))
 
 
 5. Setup Auth0
