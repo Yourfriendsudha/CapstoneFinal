@@ -1,0 +1,29 @@
+in apollo,
+we use NSX - to load balance the traffic from client.SPA - react applicationSpringboot MS - co-ordinator  layerthis is an experience layer or orchestration layer to send the data to UI. we are using this to Route the traffic to the application services 
+we use client side load balancing in co-ordinator  layer
+Springboot MS - application layer
+this  is a process layer which connects to Database.
+
+All the microservice and SPA is deployed in PCF corenetin Trusted benifieciares we are using PNF.
+PCF and PNF are just different Zones.in PNF, we are using TYK for load balancing
+Consul for property configuration managementConfiguration is an integral part of many services. we store the username, password, database name These settings are typically static, and don’t change while the service is running. 
+There are also settings which are more dynamic and can change while a service is running, like settings regarding the number of workers for a certain task. All these settings are typically stored inside one or more configuration files which the service reads on startup.
+Consul is used to handle the Dynamic environment speciifc config properties. 
+Splunk for log analysisIntrascope for performance managementand tivoli for alerting.
+Tivoli  will Trigger Incident mails to Outlook via Servicenow as Incidents.eg. when we get Security erro during unauthorzed login or Server crash 500 errors, Mails will get triggered via Tivoli to Outlook to AM support team DL
+
+microservice principleshttps://www.lambdatest.com/blog/9-fundamentals-to-a-successful-microservice-design/
+
+
+NSXThe NSX Edge load balancer enables high-availability service and distributes the network traffic load among multiple servers. It distributes incoming service requests evenly among multiple servers in such a way that the load distribution is transparent to users.
+
+SplunkSplunk Monitoring tool offers plenty of benefits for an organization
+Offers enhanced GUI and real-time visibility in a dashboardIt reduces troubleshooting and resolving time by offering instant results.It is a best-suited tool for root cause analysis.Splunk allows you to generate graphs, alerts, and dashboards.You can easily search and investigate specific results using Splunk.It allows you to troubleshoot any condition of failure for improved performance.Helps you to monitor any business metrics and make an informed decision.Splunk allows you to incorporate Artificial Intelligence into your data strategy.Allows you to gather useful Operational Intelligence from your machine dataSummarizing and collecting valuable information from different logsSplunk allows you to accept any data type like .csv, json, log formats, etc.Offers most powerful search analysis, and visualization capabilities to empower users of all types.Allows you to create a central repository for searching Splunk data from various sources.WSDLA WSDL document is used to describe a web service. This description is required, so that client applications are able to understand what the web service actually does.The WSDL file contains the location of the web service andThe methods which are exposed by the web service.The WSDL file itself can look very complex to any user, but it contains all the necessary information that any client application would require to use the relevant web service.
+Resthttps://www.guru99.com/rest-api-interview-question-answers.html
+
+How does Microservice Architecture work?Mid  
+  Microservices  34  AnswerClients – Different users from various devices send requests.Identity Providers – Authenticates user or clients identities and issues security tokens.API Gateway – Handles client requests.Static Content – Houses all the content of the system.Management –  Balances services on nodes and identifies failures.Service Discovery – A guide to find the route of communication between microservices.Content Delivery Networks – Distributed network of proxy servers and their data centers.Remote Service – Enables the remote access information that resides on a network of IT devices.Json
+Explain what is JSON objects?
+An object can be defined as an unordered set of name/value pairs.  An object in JSON starts with {left brace} and finish or ends with {right brace}.  Every name is followed by: (colon) and the name/value pairs are parted by, (comma).
+
+Why must one use JSON over XML?It is faster and lighter than XML as on the wire data formatXML data is typeless while JSON objects are typedJSON types: Number, Array, Boolean, StringXML data are all stringData is readily available as JSON object is in your JavaScriptFetching values is as simple as reading from an object property in your JavaScript code6) Explain in detail about the advantages and features of JSON?Answer: JSON structure possesses numerous advantages over the other data interchange formats. They are:Easy to use and fast nature. JSON syntax offers easy parsing of data and even faster implementation. The light-weight structure of JSON allows it to respond at a much faster rate.Compatible with numerous operating systems and browsers. This allows JSON schema to be attuned to many platforms without any extra effort to make sure its compatibility with another platform.Supports a wide range of data types including integers, double, String, Boolean, etc.
